@@ -1,0 +1,51 @@
+.hero{
+    height: 100vh;
+    background: url('/nes.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    background: #ffa69e;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 10px 40px;
+}
+
+.hero a {
+  padding: 12px 24px;
+  border: none;
+  background: #ffa69e;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;        /* Smaller heading */
+    padding: 12px 20px;     /* Reduce side padding */
+    margin-bottom: 0;
+  }
+
+  .hero a {
+    width: 80%;             /* Bigger button */
+    max-width: 250px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+}

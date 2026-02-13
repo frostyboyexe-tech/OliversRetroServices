@@ -1,0 +1,46 @@
+.about {
+    height: 100vh;
+    background: url('/snes-controller.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box {
+    background: #ffa69e;
+    width: 60%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-box h1 {
+    font-size: 2.5rem;
+}
+
+.about-box p {
+    font-size: 1.1rem;
+    
+    line-height: 1.6;
+}
+
+.about-box a {
+    align-self: center;
+    padding: 12px 24px;
+    background: white;
+    color: #ffa69e;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-box a:hover {
+    background: #ffe5e2;
+}
