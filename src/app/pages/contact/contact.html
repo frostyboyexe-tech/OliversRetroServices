@@ -1,1 +1,21 @@
-<p>contact works!</p>
+<section class="contact">
+  <div class="contact-box">
+    <h1>Contact Us</h1>
+    <p>Please fill out the form and press submit for us to reach out to you.</p>
+    <p>In the message </p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="h-captcha" data-captcha="true"></div>
+        <input type="hidden" name="access_key" value="887e91c1-248b-4238-8977-eba49179dfc5">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="hidden" name="redirect" value="https://www.oliversretroservices.com/thankyou">
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+

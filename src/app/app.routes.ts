@@ -7,6 +7,7 @@ import { Repairs } from './pages/repairs/repairs';
 import { Restoration } from './pages/restoration/restoration';
 import { Battery } from './pages/battery/battery';
 import { Services } from './pages/services/services';
+import { Thankyou } from './pages/thankyou/thankyou';
 
 export const routes: Routes = [
 
@@ -18,5 +19,6 @@ export const routes: Routes = [
     {path: 'repairs', component: Repairs},
     {path: 'battery', component: Battery},
     {path: 'services', component: Services},
+    {path: 'thankyou', component: Thankyou},
 
 ];
