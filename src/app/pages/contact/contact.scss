@@ -1,0 +1,20 @@
+.contact {
+    height: 100vh;
+    background: url('/snes-controller.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-box{
+    background: #ffa69e;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

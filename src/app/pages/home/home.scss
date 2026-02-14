@@ -1,20 +1,22 @@
 .hero{
-    height: 100vh;
-    background: url('/nes.jpg') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;    
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  background: url('/nes.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;    
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; 
 }
 
 .hero h1 {
-    color: white;
-    background: #ffa69e;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    padding: 10px 40px;
+  color: white;
+  background: #ffa69e;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 80px;
+  border-radius: 6px;
+  padding: 10px 40px;
 }
 
 .hero a {
@@ -25,27 +27,103 @@
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
+
+.hero a:hover{
+  transform: scale(1.1);
+}
+
+.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.services {
+  position: relative;
+  background-color: #a5ffd6;
+  padding: 60px 40px 120px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.services div {
+  background: white;
+  width: 100%;
+  max-width: 350px;  
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.services h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.services p {
+  flex-grow: 1; 
+  margin-bottom: 20px;
+}
+
+.services a {
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #ffa69e;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.services a:hover {
+  transform: scale(1.05);
+}
+
+.services .na {
+  background: #915f5b;
+  cursor: not-allowed;
+}
+
 
 @media (max-width: 768px) {
 
-  .hero {
-    padding: 20px;
-    text-align: center;
+  .hero h1 {
+    margin: 0 30px;
+  }
+  .services {
+    padding: 40px 20px 80px;
     gap: 20px;
   }
 
-  .hero h1 {
-    font-size: 2rem;        /* Smaller heading */
-    padding: 12px 20px;     /* Reduce side padding */
-    margin-bottom: 0;
+  .services div {
+    width: 100%;
   }
 
-  .hero a {
-    width: 80%;             /* Bigger button */
-    max-width: 250px;
-    text-align: center;
-    font-size: 1rem;
+  .services h1 {
+    font-size: 1.3rem;
   }
 
+  .services p {
+    font-size: 0.95rem;
+  }
+
+  .services a {
+    font-size: 0.95rem;
+  }
 }
