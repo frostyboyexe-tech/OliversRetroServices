@@ -4,7 +4,14 @@
     <p>Please fill out the form and press submit for us to reach out to you.</p>
     <p>In the message </p>
     <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="h-captcha" data-captcha="true"></div>
+        <div
+          #captcha
+          class="h-captcha"
+          data-captcha="true"
+          data-render="explicit"
+          data-onload="web3formsOnload"
+          data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+        ></div>
         <input type="hidden" name="access_key" value="887e91c1-248b-4238-8977-eba49179dfc5">
 
         <input type="text" name="name" placeholder="Your Name" required>
