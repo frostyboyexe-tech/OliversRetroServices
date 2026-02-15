@@ -4,17 +4,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 
 .contact-box{
-    background: #ffa69e;
+    background: #a5ffd6;
     max-width: 800px;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.contact-box h1{
+    font-size: 3rem;
+}
+.contact-box p{
+    font-size: 1.5rem;
+}
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    resize: none;
+    font-size: 1.3rem;
+}
+
+.contact-box form button{
+    border:none;
+    border-radius: 3px;
+    background-color: #ffa69e;
+    padding: 10px 30px;
 }

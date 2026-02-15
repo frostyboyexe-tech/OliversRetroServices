@@ -1,17 +1,18 @@
 .about {
-    height: 100vh;
+    min-height: 100vh;
     background: url('/snes-controller.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10% 0;
 }
 
 .about-box {
-    background: #ffa69e;
+    background: #a5ffd6;
     width: 60%;
     max-width: 800px;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
     color: white;
     display: flex;
@@ -39,8 +40,9 @@
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
+    transition: transform 0.2s ease;
 }
 
 .about-box a:hover {
-    background: #ffe5e2;
+    transform:  scale(1.05);
 }
